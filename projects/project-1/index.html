@@ -3,11 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>I like pizza</title>
+    <title>TypeScript Project</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    h2 {
+      font-size: 34px;
+    }
+  </style>
+
   <body>
-    <h1 id="headline"></h1>
-    <p id="paragraph"></p>
+    <h1>Counter Program</h1>
+
+    <div class="container">
+      <button id="increment">Increment</button>
+      <button id="decrement">Decrement</button>
+      <button id="reset">Reset</button>
+    </div>
+    <h2 id="counter">0</h2>
     <script src="index.js"></script>
+    <!-- Use the compiled JavaScript file -->
   </body>
 </html>
